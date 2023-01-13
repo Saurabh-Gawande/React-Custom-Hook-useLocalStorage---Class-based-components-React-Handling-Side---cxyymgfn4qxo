@@ -10,7 +10,7 @@ const useLocalStorage = (stateVar, value) => {
         // create a function that updates the value in local storage and updates the state
         const setValue = (value) => {
           setStoredValue(value);
-          window.localStorage.setItem(stateVar, JSON.stringify(value));
+          window.localStorage.setItem(stateVar, value);
         }
       
         // return the current value and the function to update it
